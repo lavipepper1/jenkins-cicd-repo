@@ -21,12 +21,6 @@ pipeline {
         }
         
 
-        stage('Verifying AWS Configuration'){
-            steps {
-                sh 'aws s3 ls'
-            }
-        }
-
          stage('Verify Terraform Version') {
             steps {
                 echo 'verifying the terrform version...'
